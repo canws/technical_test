@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
 app.use(express.static(path.join(__dirname, '/public')))
 app.use(
     cors({
-        origin: ['http://localhost:3000', 'http://localhost:3000'],
+        origin: ['http://localhost:3000', 'http://localhost:5173'],
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         credentials: true,
     })
